@@ -1,0 +1,996 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,
+li{
+    list-style: none;
+}
+
+
+body { 
+    margin: 0; 
+  } 
+
+
+
+.header {
+        position: fixed; /*Прибили к окну браузера сверху*/ 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        display: flex; 
+        justify-content: center; /*Выравнивание по вертикали*/ 
+        align-items: center; /*Выравнивание по горизонтали*/ 
+        height: 40px; /*Сколко тебе тут надо пикселей высоту, столько и ставь*/ 
+        font-size: 18px;
+line-height: 25px;
+
+      } 
+
+
+      .container { 
+        position: relative; 
+        width: 100%; 
+        max-width: 1470px; /*Ограничили максимальную ширину*/ 
+        height: 100%; /*высотой с родительский элемент*/ 
+       padding-left: 15px;
+       padding-right: 15px;
+       margin: 0 auto;
+      } 
+
+
+ .header__inner{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        margin-top: 35px; 
+          margin-left: 188px;
+          height: 32.75px;
+          font-family: Open Sans;
+          font-weight: normal;
+           
+      }
+
+
+.menu__list{
+    display: flex;
+     /*width: 1172px;*/ 
+  height: 32.75px; 
+  padding-left: 0px; /*Лишние отступы от li убрали*/ 
+  align-items: center; 
+  min-height: 35px; 
+  
+}
+
+
+.menu__list li:first-child { 
+    /* Меню */ 
+    margin-left: 0; /*Обнулили отступ у 1го элемента*/ 
+  } 
+
+.menu__list-link{
+    font-size: 18px;
+    height: 25px;
+    padding-bottom: 8px;
+    transition: all .5s;
+    border-bottom: 4px solid transparent;
+    color: #fff; 
+    cursor: pointer; 
+}
+
+.menu__list-item:hover{
+  cursor: pointer;
+border-bottom: 2px solid red;
+}
+
+.menu__list-item{
+  margin-left: 15px;
+  margin-right: 15px;  
+}
+
+
+
+.header__phone{
+    color: #ffffff; 
+}
+
+.header__info:hover{
+  cursor: pointer; 
+  border-bottom: 2px solid red;
+}
+
+
+.page-section.top {
+    height: 100vh; 
+  max-height: 800px; 
+  background: url("../images/cover.jpg"); /*Да, ты был прав*/ /*но качество картинки надо повыше*/ 
+  background-size: cover; /*Обложка же*/ 
+  padding-top: 40px; /*Отступ сверху на высоту header*/ 
+}
+
+.page-section.top > .container { 
+    /*Для контенйера внутри 1го экрана отдельные правила*/ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+  } 
+
+.top__title {
+     /* Сокровище нации */ 
+ 
+  width: 600px; 
+  height: 78px; 
+  font-family: Open Sans; 
+  font-style: normal; 
+  font-weight: bold; 
+  font-size: 60px; 
+  line-height: 130%; 
+  display: flex; 
+  align-items: center; 
+  color: #ffffff; 
+  margin-left: 188px; 
+}
+
+.top__text {
+    /* Организует выставку редких экспонатов  
+       древнего исскуства */ 
+ 
+  width: 522px; 
+  height: 100px; 
+  font-family: Open Sans; 
+  font-style: normal; 
+  font-weight: bold; 
+  font-size: 32px; 
+  line-height: 130%; 
+  margin-bottom: 50px; 
+  max-width: 522px; 
+  color: #ffffff; 
+  margin-left: 188px; 
+}
+
+.top__button {
+    width: 190px; 
+  height: 50px; 
+  background-color: #ff6800; 
+  color: #ffffff; 
+  cursor: pointer; 
+  margin-left: 188px; 
+  border-radius: 15px; 
+}
+
+.exhibition__title{
+    height: 36px; 
+  text-align: center; 
+  font-weight: bold; 
+  margin-top: 150px; 
+  margin-bottom: 100px; 
+  
+}
+
+.block-pictures1 {
+    display: flex; 
+  flex-wrap: wrap; 
+  padding-bottom: 100px; 
+  margin-left: 188px; 
+}
+
+.pictures1 {
+  text-align: left; 
+  font-style: normal; 
+  font-weight: normal; 
+  font-size: 18px; 
+  font-family: Open Sans; 
+
+}
+
+.pictures2 {
+    margin-left: 20px; 
+  
+}
+
+.block-pictures2 { 
+  display: flex; 
+  flex-wrap: wrap; 
+  padding-bottom: 100px; 
+  font-style: normal; 
+  font-weight: normal; 
+  font-size: 18px; 
+  font-family: Open Sans; 
+} 
+ 
+.pictures3 { 
+  text-align: left; 
+  margin-left: 80px;
+} 
+ 
+.pictures4 { 
+  margin-bottom: 82px;
+  margin-left: 20px; 
+  display: flex; 
+  align-items: center; 
+  text-align: left;
+} 
+
+
+.block-pictures3 { 
+  display: flex; 
+  flex-wrap: wrap; 
+  margin-bottom: 100px; 
+} 
+ 
+.pictures5 { 
+  text-align: left; 
+  margin-left: 80px;
+  margin-top: 179px; 
+} 
+ 
+.pictures6 { 
+  margin-left: 20px; 
+  text-align: left; 
+} 
+ 
+.pictures7 { 
+  margin-left: 20px; 
+  text-align: left; 
+  margin-top: 179px; 
+} 
+
+
+.museum-title {
+  /*height: 36px;*/ 
+  text-align: center; 
+  font-weight: bold; 
+  /*margin-top: 2581px;*/  /*Что?*/ 
+  margin-top: 150px; 
+  margin-bottom: 108px; 
+}
+
+.block-pictures4 {
+  display: flex; 
+  flex-wrap: wrap; 
+  font-style: normal; 
+  font-weight: normal; 
+  font-size: 18px; 
+  font-family: Open Sans;
+  margin-left: 80px; 
+  align-items: center;
+}
+
+.pictures8 {
+  text-align: left; 
+  display: flex; 
+  flex-grow: 1; /*Растянуть на весь блок .pictures-four*/ 
+  margin-right: 80px;
+ margin-left: 20px;
+  justify-content: space-around; 
+}
+
+.price__title { 
+  
+  height: 36px; 
+  text-align: center; 
+  align-items: center; 
+  font-weight: bold; 
+  font-size: 28px; 
+  /*height: 750px;*/ /*Думаю, одного height хватит*/ 
+  padding-top: 87px; 
+} 
+ 
+ 
+.page-section.price { 
+  background-color: #85b5c6; 
+  max-height: 750px; 
+  margin-top: 63px;  
+} 
+ 
+.price-items { 
+  display: flex;
+ align-items: center; 
+ justify-content: center; 
+  flex-grow: 1; 
+  margin-top: 100px; 
+} 
+ 
+.price-item { 
+  background-color: #ffffff; 
+  display: flex; 
+  width: 33%; 
+  justify-content: center; 
+  margin-left: 15px; 
+  margin-right: 15px; 
+  width: 260px; 
+  height: 300px; 
+  align-items: center;  
+  text-align: center; 
+  
+} 
+ 
+.price-item__list li:first-child { 
+margin-bottom: 50px; 
+} 
+ 
+.price-item:nth-child(1){ 
+  width: 260px; 
+  height: 300px; 
+  margin-bottom: 20px; 
+
+} 
+ 
+.price-item:nth-child(2) { 
+margin-bottom: 63px; 
+width: 260px; 
+height: 356px; 
+transform: translateY(20px); 
+font-weight: bold; 
+font-size: 22px; 
+} 
+   
+.price-item:nth-child(3){ 
+  width: 260px; 
+  height: 300px; 
+  margin-bottom: 20px; 
+} 
+ 
+.price-item__list{ 
+  transform: translateX(-20px); 
+  font-weight: bold; 
+font-size: 22px; 
+} 
+
+.button-one{ 
+  width: 190px; 
+height: 50px; 
+background-color: #B8B8B8; 
+font-size: 20px; 
+border-radius: 15px; 
+margin-top: 50px; 
+cursor: pointer; 
+} 
+
+.button-two{ 
+width: 190px; 
+height: 50px; 
+font-weight: bold; 
+font-size: 20px; 
+color: #ffffff; 
+background-color: #FF6800; 
+border-radius: 15px; 
+margin-top: 63px; 
+cursor: pointer; 
+} 
+ 
+.button-three{ 
+  width: 190px; 
+height: 50px; 
+background-color: #B8B8B8; 
+font-size: 20px; 
+border-radius: 15px; 
+margin-top: 50px; 
+cursor: pointer; 
+} 
+
+
+.feedback-title{
+  height: 36px; 
+  text-align: center; 
+  align-items: center; 
+  font-weight: bold; 
+  font-size: 28px; 
+margin-top: 150px; 
+  margin-bottom: 107px; 
+  /*height: 750px;*/ /*Думаю, одного height хватит*/ 
+}
+
+
+.feedback__items.block-pictures5{
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.feedback__item.DV1-item{
+  display: flex; 
+  justify-content: space-between; 
+  padding-left: 218px; 
+  margin-right: 206px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+line-height: 130%;
+}
+
+
+.feedback__item.M1-item{
+  margin-right: 205px; 
+}
+
+
+.feedback__item.M2-item{
+  margin-right: 205px; 
+ 
+}
+
+
+.feedback__item.DV2-item{
+  margin-right: 127px;
+}
+
+
+.page-section.scroll{
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+
+
+.page-section.adress {
+  background-color: #85b5c6; 
+  min-height: 312px; 
+  margin-top: 150px;  
+  display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+}
+
+
+.container-address {
+  display: flex;
+margin-left: 0px;
+justify-content: space-around;
+}
+
+.adress-title{
+  margin-bottom: 27px;
+}
+
+.adress-block{
+  height: 95px;
+}
+
+.mail {
+  display: block;
+  margin-bottom: 19px;
+  margin-top: 28px;
+}
+
+.page-section.maps {
+width: 100%;
+  width: 1440px;
+height: 703.68px;
+left: 0px;
+}
+
+
+
+.page-section.footer {
+ background: rgba(0, 0, 0, 0.5);
+    margin-top: 0px;  
+    display: flex;
+min-height: 243px;
+  } 
+
+  .logo{
+    margin-left: 188px;
+    padding-top: 38px;
+  }
+.footer__list {
+  display: flex;
+margin-left: 126px;
+align-items: center;
+min-height: 35px; 
+margin-top: 68px;
+}
+
+.footer__list li:first-child { 
+  margin-left: 0; /*Обнулили отступ у 1го элемента*/ 
+} 
+
+.footer__list-link{
+  font-size: 28px;
+  height: 38px;
+  padding-bottom: 68px;
+  transition: all .5s;
+  border-bottom: 4px solid transparent;
+  color: #fff; 
+  cursor: pointer; 
+}
+
+.footer__list-item:hover{
+cursor: pointer;
+border-bottom: 2px solid red;
+}
+
+.footer__list-item{
+margin-left: 25px;
+margin-right: 25px;  
+}
+
+
+.icons {
+margin-top: 51px;
+margin-left: 292px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+.page-section.top{
+    background-position: center;
+height: 1024px;
+}
+
+.header__inner{
+   max-width: 610px;
+   margin-left: 40px; 
+
+}
+
+.header__phone{
+    display: none;
+}
+
+.top__title{
+    margin-left: 40px;
+    font-size: 36px; 
+}
+
+.top__text{
+    margin-left: 40px; 
+    font-size: 24px; 
+}
+
+.top__button{
+    margin-left: 40px;
+    font-size: 20px; 
+}
+
+
+.block-pictures1 {
+  display: flex; 
+flex-wrap: wrap; 
+margin-bottom: 73px; 
+margin-left: 41px; 
+}
+
+.pictures1 {
+   max-width: 215px;
+  
+}
+
+.pictures2 {
+   max-width: 452px;
+  
+}
+
+img{
+  width: 100%;
+}
+
+.block-pictures2 { 
+  display: flex; 
+  flex-wrap: wrap;
+ text-align: left; 
+ top: 129px;
+} 
+
+
+.pictures3 { 
+max-width: 452px;
+margin-left: 40px;
+} 
+ 
+.pictures4 { 
+ max-width: 207px;
+display: inline-block;
+} 
+
+
+.block-pictures3 { 
+  display: flex; 
+  flex-wrap: wrap; 
+  margin-bottom: 100px; 
+} 
+ 
+.pictures5 { 
+  max-width: 216px;
+  margin-left: 40px;
+  margin-top: 50px; 
+} 
+ 
+.pictures6 { 
+  max-width: 216px;
+  margin-left: 20px; 
+  text-align: left; 
+} 
+ 
+.pictures7 { 
+  max-width: 216px;
+  margin-left: 20px; 
+  text-align: left; 
+  margin-top: 50px; 
+} 
+
+.museum-title {
+  /*height: 36px;*/ 
+  text-align: center; 
+  font-weight: bold; 
+  /*margin-top: 2581px;*/  /*Что?*/ 
+  margin-bottom: 106px; 
+}
+
+.block-pictures4 {
+  display: flex; 
+  flex-wrap: wrap; 
+  font-style: normal; 
+  font-weight: normal; 
+  font-size: 18px; 
+  font-family: Open Sans;
+  align-items: center; 
+  margin-left: 0px;
+ 
+}
+
+.pictures8 {
+  max-width: 334px;
+  text-align: left; 
+  flex-grow: 1; 
+  margin-right: 40px;
+  justify-content: space-around; 
+}
+
+
+.price__title { 
+  height: 36px; 
+  text-align: center; 
+  align-items: center; 
+  font-weight: bold; 
+  font-size: 20px; 
+  /*height: 750px;*/ /*Думаю, одного height хватит*/ 
+  padding-top: 50px; 
+} 
+ 
+ 
+.page-section.price { 
+  background-color: #85b5c6; 
+  max-height: 515px; 
+} 
+ 
+.price-items { 
+  display: flex;
+ align-items: center; 
+ justify-content: space-between;
+  flex-grow: 1; 
+  margin-top: 56px; 
+} 
+ 
+.price-item { 
+  background-color: #ffffff; 
+  display: flex; 
+  width: 33%; 
+  justify-content: center; 
+  margin-left: 10px; 
+  margin-right: 10px; 
+  width: 260px; 
+  height: 300px; 
+  align-items: center;  
+  text-align: center; 
+} 
+ 
+.price-item__list li:first-child { 
+margin-bottom: 50px; 
+} 
+ 
+.price-item:nth-child(1){ 
+  width: 260px; 
+  height: 300px; 
+  margin-top: 78px;
+} 
+ 
+.price-item:nth-child(2) { 
+margin-bottom: 73px; 
+width: 260px; 
+height: 300px; 
+transform: translateY(20px); 
+font-weight: bold; 
+font-size: 22px; 
+} 
+   
+.price-item:nth-child(3){ 
+  width: 260px; 
+  height: 300px; 
+  margin-top: 78px;
+} 
+ 
+.price-item__list{ 
+  transform: translateX(-20px); 
+  font-weight: bold; 
+font-size: 22px; 
+} 
+
+.button-one{ 
+  width: 190px; 
+height: 50px; 
+background-color: #B8B8B8; 
+font-size: 18px; 
+border-radius: 15px; 
+margin-top: 40px; 
+cursor: pointer; 
+} 
+
+.button-two{ 
+width: 190px; 
+height: 50px; 
+font-weight: bold; 
+font-size: 18px; 
+color: #ffffff; 
+background-color: #FF6800; 
+border-radius: 15px; 
+margin-top: 40px; 
+cursor: pointer; 
+} 
+ 
+.button-three{ 
+  width: 190px; 
+height: 50px; 
+background-color: #B8B8B8; 
+font-size: 18px; 
+border-radius: 15px; 
+margin-top: 40px; 
+cursor: pointer; 
+} 
+
+
+.feedback__items.block-pictures5{
+  display: flex; 
+}
+
+.feedback__item.DV1-item{
+  display: flex; 
+  justify-content: space-between; 
+  padding-left: 58px; 
+  margin-right: 253px; 
+  width: 100px;
+height: 100px;
+}
+
+.feedback__item.M1-item{144
+  margin-left: 0px; 
+  width: 100px;
+height: 100px;
+}
+
+.feedback__item.M2-item{
+  margin-right: 205px; 
+ display: none;
+}
+
+.feedback__item.DV2-item{
+  margin-right: 127px;
+  display: none;
+}
+
+.page-section.scroll{
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+.page-section.adress {
+  background-color: #85b5c6; 
+max-width: 768px;
+  min-height: 291px; 
+  margin-top: 100px;  
+  display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+
+.container-address {
+  display: flex;
+
+}
+
+
+.adress-title{
+  margin-bottom: 29px;
+}
+
+.adress-block{
+  height: 74px;
+}
+
+.mail {
+  display: block;
+  
+}
+
+
+
+.page-section.maps {
+  width: 768px;
+height: 374px;
+left: 0px;
+}
+
+
+.page-section.footer {
+  background: rgba(0, 0, 0, 0.5);
+     margin-top: 0px;  
+     display: flex;
+ min-height: 260px;
+   } 
+ 
+   .logo{
+    width: 215px;
+    height: 120px;
+     margin-left: 41px;
+     padding-top: 70px;
+   }
+ .footer__list {
+   display: flex;
+ margin-left: 20px;
+ align-items: center;
+ min-height: 35px; 
+ margin-top: 89px;
+ }
+ 
+ .footer__list li:first-child { 
+   margin-left: 0; /*Обнулили отступ у 1го элемента*/ 
+ } 
+ 
+ .footer__list-link{
+   font-size: 20px;
+   height: 27px;
+   padding-bottom: 89px;
+   transition: all .5s;
+   border-bottom: 4px solid transparent;
+   color: #fff; 
+   cursor: pointer; 
+ }
+ 
+ .footer__list-item:hover{
+ cursor: pointer;
+ border-bottom: 2px solid red;
+ }
+ 
+ .footer__list-item{
+ margin-left: 10px;
+ margin-right: 10px;  
+ }
+ 
+ 
+ .icons {
+   display: flex;
+ margin-top: 20px;
+ margin-left: 129px;
+ width: 34px;
+ height: 34px;
+ }
+ 
+ 
+ .header__phone{
+  color: #ffffff; 
+}
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 375px) {
+
+  .page-section.top{
+    background-position: center;
+height: 693px;
+}
+
+.header__inner{
+  max-width: 610px;
+  margin-left: 40px; 
+display: none;
+}
+
+
+
+
+
+.top__title{
+  display: flex;
+  font-size: 24px; 
+
+
+}
+
+.top__text{
+  display: flex;
+margin-left: 25px;
+margin-right: 25PX;
+  font-size: 16px; 
+  margin-bottom: 30px; 
+}
+
+.top__button{
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px; 
+  margin-bottom: 30px; 
+width: 295px;
+align-items: center;
+}
+
+.block-pictures1 {
+  display: flex; 
+flex-wrap: nowrap; 
+margin-bottom: 39px; 
+margin-left: 40px; 
+}
+
+.pictures1 {
+   max-width: 137px;
+  
+}
+
+.pictures2 {
+   max-width: 177px;
+  
+}
+
+img{
+  width: 100%;
+}
+
+.block-pictures2 { 
+  display: flex; 
+  flex-wrap: wrap;
+ text-align: left; 
+ top: 129px;
+ display: none;
+} 
+
+.block-pictures3 { 
+  display: flex; 
+  flex-wrap: wrap; 
+  margin-bottom: 100px;
+  display: none; 
+} 
+
+
+
+.block-pictures4 {
+ display: flex;
+  flex-wrap: wrap; 
+  font-style: normal; 
+  font-weight: normal; 
+  font-size: 14px; 
+  font-family: Open Sans;
+  margin-left: 40px; 
+ 
+}
+
+  
+.pictures8 {
+  max-width: 334px;
+  text-align: left; 
+  flex-grow: 1; 
+  margin-right: 40px;
+  justify-content: space-around; 
+}
+
+
+}
